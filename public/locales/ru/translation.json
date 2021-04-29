@@ -1,0 +1,19 @@
+{
+  "language": "ru",
+  "languageEn": "английский",
+  "languageRu": "русский",
+  "languageKy": "кыргызский",
+  "Welcome to React": "fkajsdlkfksa",
+  "Welcome to <strong>React</strong>": "welcome to <1>readadfdsaf</1>",
+  "test": "entest",
+  "login": "Логин",
+  "authorization": "Авторизация",
+  "description": "Какой-то текст",
+  "email": "Емейл",
+  "password": "Пароль",
+  "cancel": "Отменить",
+  "confirm": "Подтвердить",
+  "label": "лейбл",
+  "placeholder": "плейсхолдер",
+  "fullwidth": "какой-то текст"
+}

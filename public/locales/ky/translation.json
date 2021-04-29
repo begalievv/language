@@ -1,0 +1,19 @@
+{
+  "language": "ky",
+  "languageEn": "англисче",
+  "languageRu": "орусча",
+  "languageKy": "кыргызча",
+  "Welcome to React": "fkajsdlkfksa",
+  "Welcome to <strong>React</strong>": "welcome to <1>readadfdsaf</1>",
+  "test": "entest",
+  "login": "Логин",
+  "authorization": "Авторизация",
+  "description": "Кыргызча текст",
+  "email": "Емейл",
+  "password": "Пароль",
+  "cancel": "Токтотуу",
+  "confirm": "кыр",
+  "label": "лейбл на кыргызском",
+  "placeholder": "плейсхолдер на кыргызском",
+  "fullwidth": "какой-то текст на кыргызском"
+}

@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "languageEn": "en",
+  "languageRu": "ru",
+  "languageKy": "ky",
+  "Welcome to React": "fkajsdlkfksa",
+  "Welcome to <strong>React</strong>": "welcome to <1>readadfdsaf</1>",
+  "test": "entest",
+  "login": "Login",
+  "authorization": "authorization",
+  "description": "To subscribe to this website, please enter your email address here. We will send updates occasionally.",
+  "email": "Email Adress",
+  "password": "Password",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "label": "label",
+  "placeholder": "placeholder",
+  "fullwidth": "fullwidth"
+}
