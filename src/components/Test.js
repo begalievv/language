@@ -6,7 +6,7 @@ function Test(props) {
     const {t} = useTranslation('common');
     return (
         <div>
-            {/*{t('namespaceTest')}*/}
+            {t('translation:namespace1.translateOnNamespace1')}
         </div>
     );
 };
