@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {withTranslation} from 'react-i18next';
+import {withTranslation, Trans} from 'react-i18next';
 import i18n from "i18next";
 
 class Some extends Component {
@@ -15,10 +15,14 @@ class Some extends Component {
         return (
             <div>
 
-                {translate("formats.format_date", { value: new Date(2022, 2,23,21,32,4) })}
+                <p>{translate("description")}</p>
+                <p><Trans>description</Trans></p>
+
+                <p>{translate("formats.format_date", { value: new Date(2022, 2,23,21,32,4) })}</p>
                 <p>{translate("formats.format_hours", { value: new Date(2022, 2,23,21,32,4) })}</p>
                 <p>{translate("formats.format_currency", {value: c})}</p>
                 <p>{translate("formats.format_number", {value: c})}</p>
+
                 <p>{i18n.t("common:namespaceTest")}</p>
                 <p>{translate("namespace1.translateOnNamespace1")}</p>
 
