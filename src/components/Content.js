@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TextField, Container} from "@material-ui/core";
+import {TextField, Container, Button} from "@material-ui/core";
 import {withTranslation, Trans} from 'react-i18next';
 
 class Content extends Component {
@@ -42,9 +42,6 @@ class Content extends Component {
                         helperText={t('fullwidth')}
                         fullWidth
                         margin="normal"
-                        InputLabelProps={{
-                            shrink: true,
-                        }}
                         variant="outlined"
                     />
                 </Container>

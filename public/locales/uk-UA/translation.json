@@ -1,0 +1,20 @@
+{
+  "languageEn": "английский",
+  "languageRu": "русский",
+  "languageKy": "кыргызский",
+  "languageUa": "украинский",
+  "login": "Логин",
+  "authorization": "Авторизация",
+  "description": "Какой-то текст на укр",
+  "email": "Емейл",
+  "password": "Пароль",
+  "cancel": "Отменить",
+  "confirm": "Подтвердить",
+  "label": "лейбл на укр",
+  "placeholder": "плейсхолдер на укр",
+  "fullwidth": "какой-то текст",
+  "format_date": "{{value, date}}",
+  "format_hours": "{{value, time}}",
+  "format_number": "{{value, number}}",
+  "format_currency": "{{value, currency, UAH}}"
+}

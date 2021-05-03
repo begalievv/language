@@ -1,11 +1,8 @@
 {
-  "language": "en",
-  "languageEn": "en",
-  "languageRu": "ru",
-  "languageKy": "ky",
-  "Welcome to React": "fkajsdlkfksa",
-  "Welcome to <strong>React</strong>": "welcome to <1>readadfdsaf</1>",
-  "test": "entest",
+  "languageEn": "English",
+  "languageRu": "Russian",
+  "languageKy": "Kyrgyz",
+  "languageUa": "Ukraine",
   "login": "Login",
   "authorization": "authorization",
   "description": "To subscribe to this website, please enter your email address here. We will send updates occasionally.",
@@ -15,5 +12,9 @@
   "confirm": "Confirm",
   "label": "label",
   "placeholder": "placeholder",
-  "fullwidth": "fullwidth"
+  "fullwidth": "fullwidth",
+  "format_date": "{{value, date}}",
+  "format_hours": "{{value, time}}",
+  "format_number": "{{value, number}}",
+  "format_currency": "{{value, currency, USD}}"
 }

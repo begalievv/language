@@ -1,8 +1,9 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import {initReactI18next} from 'react-i18next';
 
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import moment from "moment";
 // don't want to use this?
 // have a look at the Quick start guide
 // for passing in lng and translations on init
@@ -19,10 +20,29 @@ i18n
     // init i18next
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
-        fallbackLng: 'ky',
+        fallbackLng: ["en-US", "ru-RU", "ky-KG"],
         debug: true,
 
         interpolation: {
+            format: (value, rawFormat, lng) => {
+                const [format, ...additionalValues] = rawFormat.split(',').map((v) => v.trim());
+
+                switch (format) {
+                    case 'number':
+                        return new Intl.NumberFormat(lng).format(value)
+                    case 'date':
+                        return new Intl.DateTimeFormat(lng).format(value);
+                    case 'time':
+                        return value.toLocaleTimeString(lng, {hour: '2-digit', minute:'2-digit'});
+                    case 'currency':
+                        return Intl.NumberFormat(lng, {
+                            style: 'currency',
+                            currency: additionalValues[0]
+                        }).format(value);
+                    default:
+                        return value;
+                }
+            },
             escapeValue: false, // not needed for react as it escapes by default
         }
     });

@@ -2,6 +2,7 @@ import React from 'react';
 import {useTranslation, Trans} from 'react-i18next';
 import Header from "./components/Header";
 import Content from "./components/Content";
+import Some from "./components/Some";
 
 export default function App() {
     const {t, i18n} = useTranslation();
@@ -14,6 +15,7 @@ export default function App() {
         <div>
             <Header changeLanguage={changeLanguage}/>
             <Content changeLanguage={changeLanguage}/>
+            <Some/>
 
         </div>
     )

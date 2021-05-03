@@ -16,6 +16,7 @@ import {
     FormControl, MenuItem, Select,
     TextField
 } from "@material-ui/core";
+import i18n from "i18next";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,7 +41,7 @@ export default function Header(props) {
     const {t, i18n} = useTranslation();
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
-    const [age, setAge] = React.useState(t('language'));
+    const [age, setAge] = React.useState(i18n.language);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -71,9 +72,12 @@ export default function Header(props) {
                                 className={classes.selectEmpty}
                                 inputProps={{ 'aria-label': 'Without label' }}
                             >
-                                <MenuItem value={'en'}>{t('languageEn')}</MenuItem>
-                                <MenuItem value={'ru'}>{t('languageRu')}</MenuItem>
-                                <MenuItem value={'ky'}>{t('languageKy')}</MenuItem>
+
+                                <MenuItem value={'en-US'}>{t('languageEn')}</MenuItem>
+                                <MenuItem value={'ru-RU'}>{t('languageRu')}</MenuItem>
+                                <MenuItem value={'ky-KG'}>{t('languageKy')}</MenuItem>
+                                <MenuItem value={'uk-UA'}>{t('languageUa')}</MenuItem>
+
                             </Select>
                         </FormControl>
                     </Typography>
@@ -81,7 +85,6 @@ export default function Header(props) {
                     <Button color="inherit" onClick={handleClickOpen}>{t('login')}</Button>
                 </Toolbar>
             </AppBar>
-
             <div>
                 <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
                     <DialogTitle id="form-dialog-title">{t('authorization')}</DialogTitle>
@@ -97,15 +100,18 @@ export default function Header(props) {
                             label={t('email')}
                             type="email"
                             fullWidth
+                            required="true"
+                            variant="outlined"
                         />
 
                         <TextField
-                            autoFocus
                             margin="dense"
                             id="name"
                             label={t('password')}
                             type="email"
                             fullWidth
+                            required="true"
+                            variant="outlined"
                         />
                     </DialogContent>
 

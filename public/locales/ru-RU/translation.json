@@ -1,11 +1,8 @@
 {
-  "language": "ru",
   "languageEn": "английский",
   "languageRu": "русский",
   "languageKy": "кыргызский",
-  "Welcome to React": "fkajsdlkfksa",
-  "Welcome to <strong>React</strong>": "welcome to <1>readadfdsaf</1>",
-  "test": "entest",
+  "languageUa": "украинский",
   "login": "Логин",
   "authorization": "Авторизация",
   "description": "Какой-то текст",
@@ -15,5 +12,9 @@
   "confirm": "Подтвердить",
   "label": "лейбл",
   "placeholder": "плейсхолдер",
-  "fullwidth": "какой-то текст"
+  "fullwidth": "какой-то текст",
+  "format_date": "{{value, date}}",
+  "format_hours": "{{value, time}}",
+  "format_number": "{{value, number}}",
+  "format_currency": "{{value, currency, RUB}}"
 }
