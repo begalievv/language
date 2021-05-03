@@ -16,5 +16,8 @@
   "format_date": "{{value, date}}",
   "format_hours": "{{value, time}}",
   "format_number": "{{value, number}}",
-  "format_currency": "{{value, currency, KGS}}"
+  "format_currency": "{{value, currency, KGS}}",
+  "namespace1": {
+    "translateOnNamespace1": "namespaceOnKy"
+  }
 }

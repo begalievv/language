@@ -16,5 +16,8 @@
   "format_date": "{{value, date}}",
   "format_hours": "{{value, time}}",
   "format_number": "{{value, number}}",
-  "format_currency": "{{value, currency, RUB}}"
+  "format_currency": "{{value, currency, RUB}}",
+  "namespace1": {
+    "translateOnNamespace1": "namespaceOnRu"
+  }
 }

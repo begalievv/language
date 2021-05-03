@@ -3,10 +3,10 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import Some from "./components/Some";
 import i18n from "i18next";
+import Test from "./components/Test";
 
 export default function App() {
     const changeLanguage = (language) => {
-        console.log(language)
         i18n.changeLanguage(language)
     }
 
@@ -15,6 +15,7 @@ export default function App() {
             <Header changeLanguage={changeLanguage}/>
             <Content/>
             <Some/>
+            <Test/>
 
         </div>
     )
