@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import {useTranslation, Trans} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import {
     Dialog,
     DialogActions,
@@ -16,7 +16,6 @@ import {
     FormControl, MenuItem, Select,
     TextField
 } from "@material-ui/core";
-import i18n from "i18next";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,7 +40,7 @@ export default function Header(props) {
     const {t, i18n} = useTranslation();
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
-    const [age, setAge] = React.useState(i18n.language);
+    const [age, setLanguage] = React.useState(i18n.language);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -52,7 +51,7 @@ export default function Header(props) {
     };
 
     const handleChange = (event) => {
-        setAge(event.target.value);
+        setLanguage(event.target.value);
         props.changeLanguage(event.target.value)
     };
 

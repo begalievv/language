@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {withTranslation, Trans} from 'react-i18next';
-import i18n from "i18next";
+import {withTranslation} from 'react-i18next';
 
 class Some extends Component {
     constructor(props) {

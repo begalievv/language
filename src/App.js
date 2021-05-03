@@ -1,11 +1,10 @@
 import React from 'react';
-import {useTranslation, Trans} from 'react-i18next';
 import Header from "./components/Header";
 import Content from "./components/Content";
 import Some from "./components/Some";
+import i18n from "i18next";
 
 export default function App() {
-    const {t, i18n} = useTranslation();
     const changeLanguage = (language) => {
         console.log(language)
         i18n.changeLanguage(language)
