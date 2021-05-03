@@ -8,15 +8,16 @@ class Some extends Component {
 
     render() {
         const {t} = this.props
-        const c = 1234.54
+        const translate = t
+        const c = 123453453.54
 
         return (
             <div>
 
-                {t("format_date", { value: new Date(2022, 2,23,21,32,4) })}
-                <p>{t("format_hours", { value: new Date(2022, 2,23,21,32,4) })}</p>
-                <p>{t("format_currency", {value: c})}</p>
-                <p>{t("format_number", {value: c})}</p>
+                {translate("format_date", { value: new Date(2022, 2,23,21,32,4) })}
+                <p>{translate("format_hours", { value: new Date(2022, 2,23,21,32,4) })}</p>
+                <p>{translate("format_currency", {value: c})}</p>
+                <p>{translate("format_number", {value: c})}</p>
 
             </div>
         );

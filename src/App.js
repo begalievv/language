@@ -13,7 +13,7 @@ export default function App() {
     return (
         <div>
             <Header changeLanguage={changeLanguage}/>
-            <Content changeLanguage={changeLanguage}/>
+            <Content/>
             <Some/>
 
         </div>

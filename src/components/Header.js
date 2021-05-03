@@ -38,9 +38,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header(props) {
     const {t, i18n} = useTranslation();
+    const translate = t;
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
-    const [age, setLanguage] = React.useState(i18n.language);
+    const [language, setLanguage] = React.useState(i18n.language);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -65,38 +66,38 @@ export default function Header(props) {
                     <Typography variant="h6" className={classes.title}>
                         <FormControl className={classes.formControl}>
                             <Select
-                                value={age}
+                                value={language}
                                 onChange={handleChange}
                                 displayEmpty
                                 className={classes.selectEmpty}
                                 inputProps={{ 'aria-label': 'Without label' }}
                             >
 
-                                <MenuItem value={'en-US'}>{t('languageEn')}</MenuItem>
-                                <MenuItem value={'ru-RU'}>{t('languageRu')}</MenuItem>
-                                <MenuItem value={'ky-KG'}>{t('languageKy')}</MenuItem>
-                                <MenuItem value={'uk-UA'}>{t('languageUa')}</MenuItem>
+                                <MenuItem value={'en-US'}>{translate('languageEn')}</MenuItem>
+                                <MenuItem value={'ru-RU'}>{translate('languageRu')}</MenuItem>
+                                <MenuItem value={'ky-KG'}>{translate('languageKy')}</MenuItem>
+                                <MenuItem value={'uk-UA'}>{translate('languageUa')}</MenuItem>
 
                             </Select>
                         </FormControl>
                     </Typography>
 
-                    <Button color="inherit" onClick={handleClickOpen}>{t('login')}</Button>
+                    <Button color="inherit" onClick={handleClickOpen}>{translate('login')}</Button>
                 </Toolbar>
             </AppBar>
             <div>
                 <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-                    <DialogTitle id="form-dialog-title">{t('authorization')}</DialogTitle>
+                    <DialogTitle id="form-dialog-title">{translate('authorization')}</DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            {t('description')}
+                            {translate('description')}
                         </DialogContentText>
 
                         <TextField
                             autoFocus
                             margin="dense"
                             id="name"
-                            label={t('email')}
+                            label={translate('email')}
                             type="email"
                             fullWidth
                             required="true"
@@ -106,7 +107,7 @@ export default function Header(props) {
                         <TextField
                             margin="dense"
                             id="name"
-                            label={t('password')}
+                            label={translate('password')}
                             type="email"
                             fullWidth
                             required="true"
@@ -116,10 +117,10 @@ export default function Header(props) {
 
                     <DialogActions>
                         <Button onClick={handleClose} color="primary">
-                            {t('cancel')}
+                            {translate('cancel')}
                         </Button>
                         <Button onClick={handleClose} color="primary">
-                            {t('confirm')}
+                            {translate('confirm')}
                         </Button>
                     </DialogActions>
                 </Dialog>

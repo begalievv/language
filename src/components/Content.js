@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
-import {TextField, Container, Button} from "@material-ui/core";
-import {withTranslation, Trans} from 'react-i18next';
+import {TextField, Container} from "@material-ui/core";
+import {withTranslation} from 'react-i18next';
 
 class Content extends Component {
     render() {
         const {t} = this.props
+        const translate = t
         return (
             <div>
                 <Container maxWidth="sm">
                     <TextField
                         id="outlined-full-width"
-                        label={t('label')}
+                        label={translate('label')}
                         required="true"
-                        placeholder={t('placeholder')}
-                        helperText={t('fullwidth')}
+                        placeholder={translate('placeholder')}
+                        helperText={translate('fullwidth')}
                         fullWidth
                         margin="normal"
                         InputLabelProps={{
@@ -23,10 +24,10 @@ class Content extends Component {
                     />
                     <TextField
                         id="outlined-full-width"
-                        label={t('label')}
+                        label={translate('label')}
                         required="true"
-                        placeholder={t('placeholder')}
-                        helperText={t('fullwidth')}
+                        placeholder={translate('placeholder')}
+                        helperText={translate('fullwidth')}
                         fullWidth
                         margin="normal"
                         InputLabelProps={{
@@ -36,10 +37,10 @@ class Content extends Component {
                     />
                     <TextField
                         id="outlined-full-width"
-                        label={t('label')}
+                        label={translate('label')}
                         required="true"
-                        placeholder={t('placeholder')}
-                        helperText={t('fullwidth')}
+                        placeholder={translate('placeholder')}
+                        helperText={translate('fullwidth')}
                         fullWidth
                         margin="normal"
                         variant="outlined"
