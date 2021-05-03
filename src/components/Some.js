@@ -15,10 +15,10 @@ class Some extends Component {
         return (
             <div>
 
-                {translate("format_date", { value: new Date(2022, 2,23,21,32,4) })}
-                <p>{translate("format_hours", { value: new Date(2022, 2,23,21,32,4) })}</p>
-                <p>{translate("format_currency", {value: c})}</p>
-                <p>{translate("format_number", {value: c})}</p>
+                {translate("formats.format_date", { value: new Date(2022, 2,23,21,32,4) })}
+                <p>{translate("formats.format_hours", { value: new Date(2022, 2,23,21,32,4) })}</p>
+                <p>{translate("formats.format_currency", {value: c})}</p>
+                <p>{translate("formats.format_number", {value: c})}</p>
                 <p>{i18n.t("common:namespaceTest")}</p>
                 <p>{translate("namespace1.translateOnNamespace1")}</p>
 

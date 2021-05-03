@@ -1,8 +1,10 @@
 {
-  "languageEn": "English",
-  "languageRu": "Russian",
-  "languageKy": "Kyrgyz",
-  "languageUa": "Ukraine",
+  "languages": {
+    "languageEn": "English",
+    "languageRu": "Russian",
+    "languageKy": "Kyrgyz",
+    "languageUa": "Ukraine"
+  },
   "login": "Login",
   "authorization": "authorization",
   "description": "To subscribe to this website, please enter your email address here. We will send updates occasionally.",
@@ -13,10 +15,12 @@
   "label": "label",
   "placeholder": "placeholder",
   "fullwidth": "fullwidth",
-  "format_date": "{{value, date}}",
-  "format_hours": "{{value, time}}",
-  "format_number": "{{value, number}}",
-  "format_currency": "{{value, currency, USD}}",
+  "formats": {
+    "format_date": "{{value, date}}",
+    "format_hours": "{{value, time}}",
+    "format_number": "{{value, number}}",
+    "format_currency": "{{value, currency, USD}}"
+  },
   "namespace1": {
     "translateOnNamespace1": "namespaceOnEn"
   }

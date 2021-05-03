@@ -73,10 +73,10 @@ export default function Header(props) {
                                 inputProps={{ 'aria-label': 'Without label' }}
                             >
 
-                                <MenuItem value={'en-US'}>{translate('languageEn')}</MenuItem>
-                                <MenuItem value={'ru-RU'}>{translate('languageRu')}</MenuItem>
-                                <MenuItem value={'ky-KG'}>{translate('languageKy')}</MenuItem>
-                                <MenuItem value={'uk-UA'}>{translate('languageUa')}</MenuItem>
+                                <MenuItem value={'en-US'}>{translate('languages.languageEn')}</MenuItem>
+                                <MenuItem value={'ru-RU'}>{translate('languages.languageRu')}</MenuItem>
+                                <MenuItem value={'ky-KG'}>{translate('languages.languageKy')}</MenuItem>
+                                <MenuItem value={'uk-UA'}>{translate('languages.languageUa')}</MenuItem>
 
                             </Select>
                         </FormControl>

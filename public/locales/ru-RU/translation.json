@@ -1,8 +1,10 @@
 {
-  "languageEn": "английский",
-  "languageRu": "русский",
-  "languageKy": "кыргызский",
-  "languageUa": "украинский",
+  "languages": {
+    "languageEn": "английский",
+    "languageRu": "русский",
+    "languageKy": "кыргызский",
+    "languageUa": "украинский"
+  },
   "login": "Логин",
   "authorization": "Авторизация",
   "description": "Какой-то текст",
@@ -13,10 +15,14 @@
   "label": "лейбл",
   "placeholder": "плейсхолдер",
   "fullwidth": "какой-то текст",
-  "format_date": "{{value, date}}",
-  "format_hours": "{{value, time}}",
-  "format_number": "{{value, number}}",
-  "format_currency": "{{value, currency, RUB}}",
+
+  "formats": {
+    "format_date": "{{value, date}}",
+    "format_hours": "{{value, time}}",
+    "format_number": "{{value, number}}",
+    "format_currency": "{{value, currency, RUB}}"
+  },
+
   "namespace1": {
     "translateOnNamespace1": "namespaceOnRu"
   }

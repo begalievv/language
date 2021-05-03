@@ -1,8 +1,10 @@
 {
-  "languageEn": "англисче",
-  "languageRu": "орусча",
-  "languageKy": "кыргызча",
-  "languageUa": "украинче",
+  "languages": {
+    "languageEn": "англисче",
+    "languageRu": "орусча",
+    "languageKy": "кыргызча",
+    "languageUa": "украинче"
+  },
   "login": "Логин",
   "authorization": "Авторизация",
   "description": "Кыргызча текст",
@@ -13,10 +15,12 @@
   "label": "лейбл на кыргызском",
   "placeholder": "плейсхолдер на кыргызском",
   "fullwidth": "какой-то текст на кыргызском",
-  "format_date": "{{value, date}}",
-  "format_hours": "{{value, time}}",
-  "format_number": "{{value, number}}",
-  "format_currency": "{{value, currency, KGS}}",
+  "formats": {
+    "format_date": "{{value, date}}",
+    "format_hours": "{{value, time}}",
+    "format_number": "{{value, number}}",
+    "format_currency": "{{value, currency, KGS}}"
+  },
   "namespace1": {
     "translateOnNamespace1": "namespaceOnKy"
   }
