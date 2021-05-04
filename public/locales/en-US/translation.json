@@ -5,6 +5,9 @@
     "languageKy": "Kyrgyz",
     "languageUa": "Ukraine"
   },
+  "apple": "there are {{x}} apples",
+  "asdf <1>React</1>": "To subscribe to this <1>en</1> website",
+  "Welcome to <0>React</0>": "Welcome to <0>React and react-i18next</0>",
   "login": "Login",
   "authorization": "authorization",
   "description": "To subscribe to this website, please enter your email address here. We will send updates occasionally.",

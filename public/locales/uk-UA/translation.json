@@ -5,6 +5,9 @@
     "languageKy": "кыргызский",
     "languageUa": "украинский"
   },
+  "apple": "в корзине {{x}} яблок",
+  "asdf <1>React</1>": "To subscribe to this website <1>uk</1>",
+  "Welcome to <1>React</1>": "Welcome to <1>React and react-i18next</1>",
   "login": "Логин",
   "authorization": "Авторизация",
   "description": "Какой-то текст на укр",

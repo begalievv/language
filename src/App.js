@@ -14,8 +14,8 @@ export default function App() {
         <div>
             <Header changeLanguage={changeLanguage}/>
             <Content/>
+			<Test/>
             <Some/>
-            <Test/>
 
         </div>
     )

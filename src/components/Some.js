@@ -11,13 +11,13 @@ class Some extends Component {
         const {t} = this.props
         const translate = t
         const c = 123453453.54
+		const apples = 5
 
-        return (
+		return (
             <div>
-
-                <p>{translate("description")}</p>
-                <p><Trans>description</Trans></p>
-
+				<p><Trans>asdf <strong>someText</strong></Trans></p>
+				<p><Trans>Welcome to <strong>React</strong></Trans></p>
+				<p>{translate("apple", {x:apples})}</p>
                 <p>{translate("formats.format_date", { value: new Date(2022, 2,23,21,32,4) })}</p>
                 <p>{translate("formats.format_hours", { value: new Date(2022, 2,23,21,32,4) })}</p>
                 <p>{translate("formats.format_currency", {value: c})}</p>

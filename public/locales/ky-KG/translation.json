@@ -5,6 +5,9 @@
     "languageKy": "кыргызча",
     "languageUa": "украинче"
   },
+  "apple": "{{x}} алмалар",
+  "asdf <1>React</1>": "To <1>ky</1> subscribe to this website",
+  "Welcome to <0>React</0>": "Welcome to <0>React and react-i18next</0>",
   "login": "Логин",
   "authorization": "Авторизация",
   "description": "Кыргызча текст",

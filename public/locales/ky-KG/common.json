@@ -1,3 +1,4 @@
 {
-  "namespaceTest": "onCommonKyNamespace"
+  "namespaceTest": "onCommonKyNamespace",
+  "Welcome to <0>React</0>": "Welcome to <0>React and react-i18next</0>"
 }

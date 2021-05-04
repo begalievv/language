@@ -1,14 +1,15 @@
 import React from 'react';
-import {useTranslation} from "react-i18next";
+import {useTranslation, Trans} from "react-i18next";
 
-function Test(props) {
-
-    const {t} = useTranslation('common');
+function Test() {
+    const {t} = useTranslation(['common', 'labels']);
     const translate = t;
     return (
         <div>
-            <p>{translate('translation:namespace1.translateOnNamespace1')}</p>
-            <p>{translate('namespaceTest')}</p>
+			<Trans>Welcome to <strong>React</strong></Trans>
+			<p>{translate('translation:namespace1.translateOnNamespace1')}</p>
+			<p>{translate('label1')}</p>
+			<p>{translate('namespaceTest')}</p>
         </div>
     );
 };
